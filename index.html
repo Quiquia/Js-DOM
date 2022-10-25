@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB APIS</title>
+    <style>
+      :root {
+        --dark-color: #222;
+        --yellow-color: #e3ee43;
+      }
+      .card {
+        display: inline-block;
+        background-color: var(--dark-color);
+        color: var(--yellow-color);
+      }
+
+      .card figcaption {
+        padding: 1rem;
+      }
+      .rotate-45 {
+        transform: rotate(45deg);
+      }
+
+      .rotate-135 {
+        transform: rotate(135deg);
+      }
+      .opacity-80 {
+        opacity: 8;
+      }
+
+      .sepia {
+        filter: sepia(1);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WEB APIs</h1>
+    <h2>DOM: Document Object Model</h2>
+    <h2>BOM: Browser Object Model</h2>
+    <h2>CSSSOM: css object Model</h2>
+    <h2>WEB APIs</h2>
+    <ul>
+      <li>Geolocalización</li>
+      <li>Drag & Drop</li>
+      <li>Canvas</li>
+      <li>Etc</li>
+    </ul>
+    <br />
+    <hr />
+    <br />
+    <h3>Manejo del DOM</h3>
+    <p id="que-es">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit amet
+      dolores repellendus, in consequatur molestiae natus suscipit, unde quam
+      qui, eveniet quia! Libero quo voluptate perferendis amet molestias ad
+      corrupti!
+    </p>
+    <nav id="menu">
+      <li><a href="#">Sección 1</a></li>
+      <li><a href="#">Sección 2</a></li>
+      <li><a href="#">Sección 3</a></li>
+      <li><a href="#">Sección 4</a></li>
+      <li><a href="#">Sección 5</a></li>
+    </nav>
+    <input type="text" name="Nombre" placeholder="Nombre" />
+    <a
+      class="link-dom"
+      href="index.html"
+      style="background-color: #22f2f2; color: black"
+      data-id="1"
+      data-description="Document Object Model"
+      >DOM</a
+    >
+    <section class="cards">
+      <figure class="card">
+        <img src="https://placeimg.com/200/200/tech" alt="Tech" />
+        <figcaption>Tecnología</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="https://placeimg.com/200/200/animals" alt="Animals" />
+        <figcaption>Animales</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="https://placeimg.com/200/200/people" alt="People" />
+        <figcaption>Personas</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="https://placeimg.com/200/200/nature" alt="Nature" />
+        <figcaption>Naturaleza</figcaption>
+      </figure>
+      <figure class="card">
+        <img src="https://placeimg.com/200/200/arch" alt="Arch" />
+        <figcaption>Arquitectura</figcaption>
+      </figure>
+    </section>
+    <template id="template-card">
+      <figure class="card">
+        <img />
+        <figcaption></figcaption>
+      </figure>
+    </template>
+    <h3>Eventos en JavaScript</h3>
+    <h4>Manejadores de Eventos</h4>
+    <!-- <button onclick="alert('Hola mundo')">Evento con atributo HTML</button> -->
+    <button onclick="holaMundo()">Evento con atributo HTML</button>
+    <br /><br />
+    <button id="evento-semantico">Evento con manejador semántico</button>
+    <br /><br />
+    <button id="evento-multiple">Evento con manejador Multiple</button>
+    <br /><br />
+    <button id="evento-remover">
+      Removiendo eventos con manejadores múltiples
+    </button>
+    <br /><br /><br /><br /><br />
+    <script src="Js/dom.js"></script>
+  </body>
+</html>
